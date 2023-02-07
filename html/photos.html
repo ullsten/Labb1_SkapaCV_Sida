@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Labb1_SkapaCV_Sida/css/style.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="/Labb1_SkapaCV_Sida/css/print.css" media="print">
+    <title>Photos</title>
+           <!-- script for responsive navbar -->
+           <script> 
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+</head>
+<body id="photos">
+     <!--navbar starts-->
+     <script id="add_navbar" src="/Labb1_SkapaCV_Sida/js/navbar.js"></script>
+     <!--navbar ends-->
+      <!-- header starts -->
+  <header class="photoHeader">
+    <h1>Some random photos</h1>
+    <h5>click on image for larger size</h5>
+    <!-- not visible on page but when print -->
+    <a href="http://www.oskarullsten.se/Labb1_SkapaCV_Sida/html/photos.html"><p class="printContent">(full size available on my website)</p></a>
+    <!-- ends -->
+  </header>
+  <!-- header ends -->    
+  <main class="photoContent">
+      <figure class="pictureContainer">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-cesar-perez-733745.jpg" alt="white car">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-jeremy-bishop-2422915.jpg" alt="Doplphins">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-luis-del-río-15286.jpg" alt="Green forrest">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-og-mpango-3041110.jpg" alt="Rose in water">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-philippe-donn-1114690.jpg" alt="Lightning">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-piccinng-3075993.jpg" alt="City by night">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-pixabay-2150.jpg" alt="Space">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-pixabay-461940.jpg" alt="Palm trees by the beach">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-sam-kolder-2387873.jpg" alt="Waterfall">
+        <img class="picture" src="/Labb1_SkapaCV_Sida/img/pexels-tan-danh-1329711.jpg" alt="Bed">
+      </figure>
+      
+</section>
+
+    <!-- The Modal to create clickable image-->
+    <section id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <section id="caption"></section>
+        <!-- script to set display property edit in js file-->
+        <script src="/Labb1_SkapaCV_Sida/js/onclickEnlarge.js"></script>
+        
+  </main>
+           <!--footer starts-->
+           <footer class="footer">
+            <address>Copyright &copy Oskar Ullsten 2023</address>
+          </footer>
+            <!-- footer ends -->
+</body>
+</html>

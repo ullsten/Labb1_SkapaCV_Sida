@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Labb1_SkapaCV_Sida/css/style.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="/Labb1_SkapaCV_Sida/css/print.css" media="print"/>
+    <title>Resume</title>
+        <!-- script for responsive navbar -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";}
+            else
+            {x.className = "topnav";}
+            }
+</script>
+</head>
+<body id="cv">
+    <!--navbar starts-->
+   <script id="add_navbar" src="/Labb1_SkapaCV_Sida/js/navbar.js"></script>
+   <!--navbar ends-->
+   <!-- download cv section starts -->
+   <section class="downloadcv">
+    <button id="buttoncv" class="buttoncv">
+      <a href="/Labb1_SkapaCV_Sida/pdf/Oskar_Ullsten_CV-pdf.pdf" download="">download CV</a>
+    </button>
+  </section>
+  <!-- download cv ends -->
+      <!--Container starts-->
+    <section class="container-cv">
+      <!--Coloumn left starts-->
+      <section class="column-left">
+         <!--portrait starts-->
+        <section class="portrait">
+          <img class="myPortrait" src="/Labb1_SkapaCV_Sida/img/portrait/me-portrait-round.png" alt="Portrait of me Oskar Ullsten">
+          <h1>Oskar</h1>
+          <h1>Ullsten</h1> 
+        </section>
+        <!--portrait ends-->
+        <section class="contact-cv">
+          <figure class="centersymbol">
+            <img class="symbols" src="/Labb1_SkapaCV_Sida/img/icons/contacts-128-blue.png" alt="Contact symbol">
+            <h3 class="beside">Contact</h3>
+            <hr>
+          </figure>
+          <ul>
+            <li>
+                <img height="14px" src="/Labb1_SkapaCV_Sida/img/icons/phone-2-128.png" alt="Phone picture">
+                 <h5 class="beside">Phone</h5>
+                </li>
+            <p>0730-913046</p>
+            <li>
+              <img height="14px" src="/Labb1_SkapaCV_Sida/img/icons/gmail-login-128-white.png" alt="Email icon">
+              <h5 class="beside">Email</h5>
+            <p>ullzten@gmail.com</p>
+            </li>
+            <li>
+              <img height="14px" src="/Labb1_SkapaCV_Sida/img/icons/home-5-128-white.png" alt="House door">
+              <h5 class="beside">Address</h5>
+              <p>Byskillnadsvägen 14, 89340 Köpmanholmen</p>
+            </li>
+          </ul>
+        </section>
+        <!--education starts-->
+        <!-- not visible on page but when print -->
+        <section class="contactPrint">
+          <ul>
+            <li>
+              <h1>Education</h1>
+              <hr>
+            </li>
+            <li>
+              2022 - Current
+              System developer .NET with AI competence
+              Edugrade education
+              </li>
+              <li>
+              2021-2022
+              Programming 1
+              Adult education Örnsköldsvik
+              </li>
+              <li>
+              2021-2022
+              Technique 1
+              Adult education Örnsköldsvik
+              </li>
+              <li>
+              2011
+              Business management (step 1) 40h
+              STIB Ställningsentreprenörerna
+            </li>
+            <li>
+              1998-2001
+              Social science focus (samhällsvetenskaplig inriktning)
+              Nolaskolans gymnasium, Örnsköldsvik
+            </li>
+          </ul>
+        </section>
+         <!-- not visible on page but when print ends-->
+    <section class="education">
+      <figure class="centersymbol" >
+        <img class="symbols" src="/Labb1_SkapaCV_Sida/img/icons/literature-128-blue.png" alt="Education book">
+        <h3 class="beside">Education</h3>
+        <hr>
+      </figure>
+      <ul>
+        <li>
+          <img class="white-arrow-icon" src="/Labb1_SkapaCV_Sida/img/icons/arrow-28-128-white.png" alt="White arrow in circle">
+          <h5 class="beside">2022 - Current</h5>
+          <h5 class="description">System developer .NET with AI competence</h5>
+          <p>Edugrade education</p>
+        </li>
+        <li>
+          <img class="white-arrow-icon" src="/Labb1_SkapaCV_Sida/img/icons/arrow-28-128-white.png" alt="White arrow in circle">
+          <h5 class="beside">2021-2022</h5>
+          <h5 class="description">Programming 1</h5>
+          <p>Adult education Örnsköldsvik</p>
+        </li>
+        <li>
+          <img class="white-arrow-icon" src="/Labb1_SkapaCV_Sida/img/icons/arrow-28-128-white.png" alt="White arrow in circle">
+          <h5 class="beside">2021-2022</h5>
+          <h5 class="description">Technique 1</h5>
+          <p>Adult education Örnsköldsvik</p>
+        </li>
+        <li>
+          <img class="white-arrow-icon" src="/Labb1_SkapaCV_Sida/img/icons/arrow-28-128-white.png" alt="White arrow in circle">
+          <h5 class="beside">2011</h5>
+          <h5 class="description">Business management (step 1) 40h</h5>
+          <p>STIB Ställningsentreprenörerna</p>
+          <li>
+            <img class="white-arrow-icon" src="/Labb1_SkapaCV_Sida/img/icons/arrow-28-128-white.png" alt="White arrow in circle">
+            <h5 class="beside">1998-2001</h5>
+            <h5 class="description">Social science focus (samhällsvetenskaplig inriktning)</h5>
+            <p>Nolaskolans gymnasium, Örnsköldsvik</p>
+          </li> 
+      </ul>
+    </section>
+     <!--education ends-->
+     <!--language starts-->
+        <section class="language">
+          <figure class="centersymbol">
+            <img class="symbols" src="/Labb1_SkapaCV_Sida/img/icons/globe-128.png" alt="Globe">
+            <h3 class="beside">Language</h3>
+            <hr>
+          </figure>
+          <p>Swedish</p>
+          <section class="skill-container-language">
+            <section class="swedish">100%</section>
+          </section>
+          <p>English</p>
+          <section class="skill-container-language">
+            <section class="english">95%</section>
+          </section>
+      </section>
+     <!--language ends-->
+     <section class="references">
+      <h1>My references</h1>
+      <hr>
+      <section class="myreferences">
+        <section class="references-left">
+          <ul>
+            <li>Tomas Nordin</li>
+            <p>0703412223</p>
+            <p>Botnia Ställningar/HighCon AB</p>
+          </ul>
+        </section>
+        <section class="references-right">
+          <ul>
+            <li>Ulf Bylund</li>
+            <p>Metsä Board Husum</p>
+          </ul>
+        </section>
+      </section>
+      
+    </section>
+      
+      </section>
+      <!--Coloumn left ends-->
+      <!--Column right starts-->
+      <section class="column-right-cv">
+        <!--profile starts-->
+        <section class="profile">
+          <img class="symbols-cv-right" src="/Labb1_SkapaCV_Sida/img/icons/profile-round-blue.png" alt="Profile icon blue">
+          <h1 class="beside">Profile info</h1>
+          <hr>
+          <section class="profile-info">
+            <p> 
+              My goal is to constantly develop and learn new things.
+              I am a social, curious and positive person who enjoys a varied and is not afraid of physical work.
+              Working with people is something I both appreciate and master.
+            </p>
+          </section>
+        </section>
+        <!--profile ends-->
+          <!-- Work experience starts -->
+    <section class="employments">
+      <h1>Work Experience</h1>
+      <hr>
+      <section class="row-employments">
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>HichCon AB</h4>
+          <p>Scaffolder (Leave of absence for studies since 202209)</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2021 - current</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Botnia Ställningar AB</h4>
+          <p>Scaffolder.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2015-2021</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Metsä Board Husum</h4>
+          <p>
+            Shift operator on Coating machine (BM1) and Calendering machine.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2013-2015</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Self-employed, Nordisk Ställningsmontage i Sverige AB</h4>
+          <p>Since the spring of 2009, I have run my own business in the construction industry with a focus on staffing.
+            My positions have been CEO, payroll manager and scaffolder.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2009 - current</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Timrå Industriservice AB</h4>
+          <p>Scaffolder</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2006-2009</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Harry´s Örnsköldsvik</h4>
+          <p>Entrance host, extra work on weekends.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2009-2010</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Örnsköldsvik municipality</h4>
+          <p>Habilitation assistant and Personal assistant. Permanent employee in disability care.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2004-2006</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Örnsköldsvik municipality</h4>
+          <p>Carer. Permanent employee in elderly care as carer.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2001-2003</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Örnsköldsvik municipality</h4>
+          <p>Carer. Permanent employee in elderly care as carer.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>2001-2003</h4>
+        </section>
+        <section class="column-emp-left">
+          <figure class="arrowicon">
+            <img src="/Labb1_SkapaCV_Sida/img/icons/arrow-right-circle.svg" alt="Circle with arrow">
+          </figure>
+        </section>
+        <section class="column-emp-middle">
+          <h4>Rusta, Örnsköldsvik</h4>
+          <p>Shop assistant and warehouse worker.</p>
+        </section>
+        <section class="column-emp-right">
+          <h4>1999-2001</h4>
+        </section>
+      </section>
+    </section>
+    <!-- Work experience ends -->
+    <!-- Skills starts -->
+    <section class="skills">
+      <h1>My skills & expertise</h1>
+      <hr>
+      <section class="skill-container">
+         <!--Skill left starts-->
+      <section class="skill-left">
+        <ul>
+          <li>
+            <h3>Windows XP/Vista/7 /8/10/11</h3>
+            <section class="skill-barometer">
+              <section class="procent100"><p>100%</p></section>
+            </section>
+            <h3>Microsoft Office Excel/Word/Outlook</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+            <h3>Visma Salary 600</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+            <h3>Hogia invociving</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+          </li>
+        </ul>
+      </section>
+      <!--Skill left ends-->
+       <!--Skill right starts-->
+      <section class="skill-right">
+        <ul>
+          <li>
+            <h3>Microsoft Visual Studio</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+            <h3>SQL Server Management Studio(SSMS)</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+            <h3>Visual Studio Code</h3>
+            <section class="skill-barometer">
+              <section class="procent95"><p>95%</p></section>
+            </section>
+          </li>
+        </ul>
+      </section>
+          <!--Skill right ends-->
+    </section>
+  </section>
+  <!-- skills ends -->
+    <!-- licenses starts -->
+    <section class="licenses">
+      <h1>Licenses</h1>
+      <hr>
+      <ul>
+        <li>Driving license: B, BE, B96, A</li>
+        <li>Snowmobile driver´s license</li>
+        <li>Evidence for traverse(taken on Metsä Board, Husum)</li>
+        <li>Special training and Vocational certificate as scaffolder</li>
+        <li>Fall protection training</li>
+      </ul>
+    </section>
+    <!-- licenses ends -->
+      </section> 
+   </section>
+   <!--Container ends-->
+    <!--footer starts-->
+   <footer class="footer">
+    <address>Copyright &copy Oskar Ullsten 2023</address>
+  </footer>
+    <!-- footer ends -->
+</body>
+</html>

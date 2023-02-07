@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Labb1_SkapaCV_Sida/css/style.css" media="screen">
+    <link rel="stylesheet" href="/Labb1_SkapaCV_Sida/css/print.css" media="print">
+    <title>Web guidelines</title>
+    <!-- script for responsive navbar start-->
+    <script> 
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        <!-- script for responsive navbar ends-->
+        
+</head>
+<body id="webguidelines">
+    <!--navbar starts-->
+    <script id="add_navbar" src="/Labb1_SkapaCV_Sida/js/navbar.js"></script>
+    <!--navbar ends-->
+    <header class="headerWebguidelines">
+        <h1 lang="EN">Web guidelines</h1>
+        <h4 lang="en">(web guidlines will be present in swedish)</h4>
+    </header>
+    <section class="webguidelines">
+        <ul>
+            <h2>Uppfyllda</h2>
+            <hr>
+            <li>
+                1.3.1 - <span class="uppfyllda">Ange i kod vad sidans olika delar har för roll.</span>
+                <p>Har försökt att använda rätt taggar för rubriker, text mm.</p>
+            </li>
+            <li>
+                1.3.2 - <span class="uppfyllda">Presentera innehållet i en meningsfull ordning för alla.</span>
+                <p>Ordningen är så som jag önskar baserat på skärmstorlek.</p>
+            </li>
+            <li>
+                1.3.4 - <span class="uppfyllda">Se till att allt innehåll presenteras rätt oavsett skärmens riktning.</span>
+                <p>Innehållet är inte låst till liggande eller stående orientering. Fungerar lika bra oavsett.</p>
+            </li>
+            <li>1.4.1 - <span class="uppfyllda">Använd inte enbart färg för att förmedla information.</span>
+            <p>Tycker att rubriker/underrubriker mm anger vad som förmedlas.</p>
+            </li>
+            <li>
+                1.4.10 - <span class="uppfyllda">Skapa en flexibel layout som fungerar vid förstoring eller liten skärm.</span>
+                <p>Layouten fungerar oavsett förstoring eller liten skärm tack vare responsive.</p>
+            </li>
+                <li>
+                1.4.11 - <span class="uppfyllda">Använd tillräckliga kontraster i komponenter och grafik.</span></li>
+                <p>Tycker kontrast mot andra komponenter är tillräckliga för att kunna urskilja vad som är vad.</p>
+            
+            <li>
+                1.4.13 - <span class="uppfyllda">Popup-funktioner ska kunna hanteras och stängas av alla.</span>
+                <p>Den popup-funktion som finns på sidan kan både stängas på icon X eller genom att klicka på skärmen.</p>
+            </li>
+            <li>
+                1.4.4 - <span class="uppfyllda">Se till att text går att förstora utan problem.</span>
+                <p>Texten går att förstora med den webbläsare man använder efter önskan och innhehållet går att urskilja.</p>
+            </li>
+            <li>
+                2.4.7 - <span class="uppfyllda">Markera tydligt vilket fält eller element som är i fokus.</span>
+                <p>Menyval blir förstorad + färgen ändras när muspekaren förs över och när användaren gjort ett val.</p>
+            </li>
+            <li>
+                2.5.1 - <span class="uppfyllda">Erbjud alternativ till komplexa fingerrörelser.</span>
+                <p>Inte uppfyld till 100%, men bilder på sidan går att förstora med ett klick med mus eller finger på pekskärmar.</p>
+            </li>
+            <li>
+                2.5.3 - <span class="uppfyllda">Se till att text på knappar och kontroller överensstämmer med maskinläsbara etiketter.</span>
+                <p>Har Aria-label på den knapp jag har som vad jag förstått beskriver funktionen för knappen.</p>
+            </li>
+            <li>3.1.1 - <span class="uppfyllda">Ange sidans språk i koden.</span>
+            <p>Sidans språk är angett i HTML lang.</p>
+            </li>
+            <li>3.1.2 - <span class="uppfyllda">Ange språkförändringar i koden.</span>
+            <p>Har angett språkförändringar i HTML lang samt med text på den sida som har annat språk. Då kan automatiskt uppläsning beskriva 
+                vilket språk som kommer.
+            </p>
+            </li>
+            <li>3.2.1 - <span class="uppfyllda">Ange språkförändringar i koden.</span>
+            <p>Har inget oväntat som förändras anser jag.</p>
+            </li>
+        </ul>
+        <ul>
+            <h2>Webriktlinjer som ej är uppfyllda</h2>
+            <hr>
+            <li>1.3.5 - <span class="ejuppfyllda">Märk upp vanliga formulärfält i koden</span>
+                <p>Har inget formulärfält</p>
+            </li>
+            <li>
+                1.4.12 - <span class="ejuppfyllda">Se till att det går att öka avstånd mellan tecken, rader, stycken och ord</span>
+                <p>Har inte gjort någon funktion för det. Avståndet är anpassat så det ser bra ut på mindre skärmar också. Iaf försökt.</p>
+            </li>
+            <li><span class="ejuppfyllda">1.4.2 - Ge användaren möjlighet att pausa, stänga av eller sänka ljud.</span>
+            <p>Har inte några sånna funktioner.</p>
+            </li>
+            <li>2.1.1 - <span class="ejuppfyllda">Utveckla systemet så att det går att hantera med enbart tangentbordet.</span>
+            <p>Har inte haft behov för det.</p>
+            </li>
+            <li>2.1.2 - <span class="ejuppfyllda">Se till att markören inte fastnar vid tangentbordsnavigation</span>
+            <p>Har inte någon sådan funktion.</p>
+            </li>
+            <li>2.1.4 - <span class="ejuppfyllda">Skapa kortkommandon med varsamhet</span>
+            <p>Har ingte någon sådan funktion.</p>
+            </li>
+            <li>2.2.2 - <span class="ejuppfyllda">Ge användarna möjlighet att justera tidsbegränsningar</span>
+            <p>Har ingen tidsbegränsning på sidan.</p>
+            </li>
+            <li>2.4.1 - <span class="ejuppfyllda">Ge användarna möjlighet att pausa eller stänga av rörelser.</span>
+            <p>Har inget som behöver pausas.</p>
+            </li>
+            <li>2.4.1 - <span class="ejuppfyllda">Erbjud möjlighet att hoppa förbi återkommande innehåll.</span>
+            <p>Har inget återkommande innehåll.</p>
+            </li>
+            <li>2.4.3 - <span class="ejuppfyllda">Erbjud möjlighet att hoppa förbi återkommande innehåll.</span>
+            <p>Har inte gett möjlighet att använda tangentbordet.</p>
+            </li>
+            <li>2.5.2 - <span class="ejuppfyllda">Gör det möjligt att ångra klick.</span>
+            <p>Har inget som behöver ångras =) </p>
+            </li>
+            <li>3.2.2 - <span class="ejuppfyllda">Utför inga oväntade förändringar vid inmatning.</span>
+                <p>Har inget inmatningsfält.</p>
+                </li>
+                <li>3.3.1 - <span class="ejuppfyllda">Utför inga oväntade förändringar vid inmatning.</span>
+                <p>Har inget formulär/inmatningsfält.</p>
+                </li>
+            <li>3.3.2 - <span class="ejuppfyllda">Skapa tydliga och klickbara fältetiketter/ledtexter.</span>
+            <p>Har inget fält.</p>
+            </li>
+            <li>3.3.3 - <span class="ejuppfyllda">Ge förslag på hur fel kan rättas till.</span>
+            <p>Har inget fält eller dylikt.</p>
+            </li>
+            <li>3.3.4 - <span class="ejuppfyllda">Ge möjlighet att ångra, korrigera eller bekräfta vid viktiga transaktioner.</span>
+            <p>Har inget fält/inmatning.</p>
+            </li>
+            <li>4.1.1 - <span class="ejuppfyllda">Se till att koden validerar.</span>
+            <p>Osäker på vad det betyder, men koden validerar iaf enligt vad som beskrivs för varje section anser jag. Men då jag inte 
+                kan allt om validering får den anses som ej uppfylld.
+            </p>
+            </li>
+            <li>4.1.2 - <span class="ejuppfyllda">	Se till att skräddarsydda komponenter fungerar i hjälpmedel.</span>
+            <p>Har inte kunskap eller haft behov för skräddarsydda komponenter.</p>
+            </li>
+            <li>4.1.3 - <span class="ejuppfyllda">Se till att hjälpmedel kan presentera meddelanden som inte är i fokus.</span>
+            <p>Har inte kunskap eller haft behov att anpassa för speciella hjälpmedel för denna sida.</p>
+            </li>
+
+        </ul>
+    </section>
+     <!--footer starts-->
+     <footer class="footer">
+        <address>Copyright &copy Oskar Ullsten 2023</address>
+      </footer>
+        <!-- footer ends -->
+</body>
+</html>

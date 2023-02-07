@@ -1,0 +1,983 @@
+/* CSS same for all pages */
+/* Imported font from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@500&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@500&family=Montserrat:ital@0;1&family=Open+Sans:wght@700&display=swap');
+
+.print{
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.contactPrint
+{
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+/* Content hidden on website but visible when print */
+.printContent{
+  visibility: hidden;
+  margin: 0;
+  height: 0;
+}
+/* ends */
+ body {
+  border: 0px solid green;
+  margin: 0;
+  font-family: 'open sans';
+  background-image: url(/Labb1_SkapaCV_Sida/img/backgrounds/security-g14d241675_1920.jpg);
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.footer {
+  text-align: center;
+  background-color:rgb(0, 0, 0, 0.0);
+  color: rgb(255, 255, 255);
+  height: 50px;
+  width:100%;
+  bottom: 0;
+  position:fixed;
+  font-weight: 300;
+  z-index: -1;
+  border: #06D85F 0px solid;
+}
+@media screen and (max-width:1068px) {
+  .footer{
+    visibility: hidden;
+  }
+}
+
+/* ***************************************************************** */
+/* Change color for active button in menu */
+#home .home, #about .about, #about .about, #cv .cv, #portfolio .portfolio,
+ #photos .photos, #contact .contact, #webguidelines .webguidelines
+{
+/* background-color: rgb(56, 56, 56, 0.8); */
+color: rgb(247, 117, 12);
+text-transform: uppercase;
+border-radius: 0px 0px;
+}
+/* ***************************************************************** */
+/* Navigation menu starts */
+.topnav {
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.0);
+  overflow: hidden;
+  position: relative;
+  margin-top: 0px;
+  height: auto;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px;
+  border: 0px solid rgb(102, 102, 102);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  /* background-color: rgb(71, 71, 71, 0.8); */
+  color: rgb(247, 117, 12);
+  border-radius: 0px 0px;
+  text-transform: uppercase;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+   .topnav a:not(:first-child) {display: none;}
+   .topnav a.icon {
+     float: right;
+     display: block;
+ }
+}
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+ @media screen and (max-width: 700px) {
+   .topnav.responsive {position: relative;}
+   .topnav.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: center;
+   }
+   .topnav{
+    text-align: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+   }
+ }
+ /* Nav menu ends */
+ /* CSS same for all pages ends */
+   /* ***************************************************************** */
+/* INDEX PAGE STARTS*/
+.indexFlexBox{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top:35px;
+  height: 100%;
+  border: 0px solid rgb(179, 5, 5);
+}
+.indexContent{
+  width: 100%;
+  height: 350px;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  border: 0px solid green;
+}
+.firstname{
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  padding-right: 0px;
+  margin-bottom: 0;
+  text-shadow: 0px 10px 25px rgb(64, 166, 224);
+  font-weight: bolder;
+}
+.lastname{
+  color: rgb(255, 255, 255);
+  font-size: 7em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0px;
+  text-shadow: 0px 10px 25px rgb(64, 166, 224);
+}
+.NET{
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0px;
+  text-shadow: 5px 5px 10px rgb(64, 166, 224);
+}
+.edugrade{
+  margin-top: 0;
+  padding-left: 0px;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 700px) {
+  .indexContent{
+    font-size: 70%;
+  }
+}
+
+/* Index Page ends */
+/* ***************************************************************** */
+/* ABOUT ME PAGE STARTS */
+.aboutMain{
+  display: flex;
+  flex-wrap: wrap;
+ margin-top: 0px;
+ margin-bottom: 95px;
+ margin-left: 20px;
+ margin-right: 20px;
+ background-color: rgba(0, 0, 0, 0.7);
+ border: 0px solid white;
+}
+.aboutHeader{
+  text-align: left;
+  margin-top: 75px;
+  padding-left: 170px;
+  border: 0px solid green;
+}
+.aboutHeader h1{
+color: rgb(255, 255, 255);
+margin-bottom: 20px;
+}
+.aboutHeader span{
+  color: rgb(247, 117, 12);
+  font-weight: 400;
+}
+.aboutHeader h4{
+  color: slategray;
+}
+.meInfo{
+  max-width: 38em;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 0px solid #000000;
+  }
+.meInfo > p{
+color: rgb(255, 255, 255);
+text-align: left;
+font-weight: 300;
+font-size: 15px;
+letter-spacing: 0.03em;
+border: #000000 solid 0px;
+}
+.meInfo h3{
+  color: rgb(247, 117, 12);
+}
+.myPicture{
+  flex: 100%;
+  border: 0px solid #06D85F;
+  margin-bottom: auto;
+  margin-top:   auto;
+  max-width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mePortrait{
+  width: 100%;
+  border: 2px solid rgb(247, 117, 12);
+  border-radius: 10px 10px;
+}
+@media screen and (max-width: 600px) {
+  .aboutHeader{
+   text-align: center;
+   padding: 0;
+   margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+ .mePortrait{
+  margin-top: 20px;
+ }
+}
+/* About me page ends */
+/* ***************************************************************** */
+/* CV PAGE STARTS*/
+.downloadcv{
+  width: 7em;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.buttoncv a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.buttoncv a:visited{
+  text-decoration: none;
+}
+#buttoncv{
+  background-color: #67a4e9;
+  height: 2em;
+  border: 2px  #ffffff solid;
+  border-radius: 20px 20px;
+  margin-bottom: 0;
+}
+#buttoncv:hover{
+  background-color:rgb(247, 117, 12);
+}
+.container-cv{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  border: 0px solid green;
+  border-radius: 20px 0px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top:25px;
+  margin-bottom: 50px;
+  row-gap: 10px;
+  column-gap: 0px;
+  font-family: 'sans serif fonts';
+  line-height: 1.2em;
+}
+ .column-left{
+  flex: 10%;
+  background-color: rgb(46, 46, 46);
+  padding: 0px;
+  margin-bottom: 15px;
+  border: #67a4e9 solid 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+.column-right-cv{
+  flex: 50%;
+  border: 0px solid yellow;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  margin-bottom: 15px;
+}
+.column-left hr{
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+.portrait{
+  background-color: #67a4e9;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  line-height: 2.5em;
+}
+.portrait h1{
+  font-size: 2.5em;
+  color: rgb(46, 46, 46);
+  margin: 0px;
+}
+.myPortrait{
+  width: 150px;
+  margin: 10px;
+  border: 0px solid rgb(31, 31, 31);
+}
+.contact-cv p, .education p{
+  margin: 0;
+  padding-bottom: 10px;
+  color: #8d8d8d;
+  font-size: 0.8em;
+  padding-left: 32px;
+}
+.white-arrow-icon{
+  height: 10px;
+}
+.education h5{
+  margin: 0;
+}
+.description{
+  padding-left: 29px;
+}
+.education p{
+color: #8d8d8d;
+font-size: 0.8em;
+padding-left: 29px;
+margin-top: 0;
+margin-bottom: 10;
+}
+.contact-cv ul, .language ul, .education ul, .employments ul{
+ list-style:none;
+ text-align: left;
+ font-size: 1em;
+}
+.contact-cv, .education, .language{
+  background-color: rgb(46, 46, 46);
+  border: #06D85F 0px solid;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.language p{
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 0px;
+}
+.skill-container-language{
+  background-color: #696868;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+.swedish, .english{
+  font-size: 0.8em;
+  text-align: right;
+  font-weight: bolder;
+  color: white;
+  border-radius: 20px;
+}
+.swedish{
+  width: 100%;
+  background-color: rgb(89, 173, 221);
+}
+.english{
+  width: 97%;
+  background-color:rgb(89, 173, 221);
+}
+.beside{
+  display: inline-block;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.symbols{
+  height: 15px;
+}
+.centersymbol{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Columnt right cv starts */
+.symbols-cv-right{
+  height: 20px;
+}
+.column-right-cv h1{
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.column-right-cv h3, .column-right-cv h4{
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 0.9em;
+  font-weight: bolder;
+}
+.column-right-cv hr{
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  border-radius: 20px 20px;
+}
+.profile, .employments, .skills, .licenses, .references{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.profile-info{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 0px solid green;
+}
+/* Work experiennce starts */
+.row-employments{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-top: 20px;
+}
+.column-emp-left {
+  flex: 20%;
+}
+.column-emp-middle {
+  flex: 60%;
+}
+.column-emp-right {
+  flex: 20%;
+}
+.column-emp-middle p{
+  margin-top: 0px;
+  color: gray;
+  font-size: 0.9em;
+}
+.arrowicon{
+  margin-top: 0px;
+  text-align: right;
+}
+.arrowicon img{
+  height: 0.7em;
+}
+.skills{
+  margin-bottom: 0px;
+}
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.skill-left{
+  flex: 50%;
+}
+.skill-left h3, .skill-right h3{
+  text-align: left;
+}
+.skill-right{
+  flex: 50%;
+}
+.skill-container p{
+  margin-top: 0px;
+  font-size: 0.5em;
+}
+.skill-barometer{
+  width: 100%;
+  margin-top: 5px;
+  background-color: #696868;
+  border-radius: 20px 20px;
+}
+.skill-container ul{
+  list-style: none;
+}
+.procent100{
+  text-align: right;
+  width: 100%;
+  background-color: rgb(89, 173, 221);
+  border-radius: 20px 20px;
+}
+.procent95{
+  text-align: right;
+  width: 95%;
+  background-color: rgb(89, 173, 221);
+  border-radius: 20px 20px;
+}
+.licenses ul, .myreferences{
+  margin-left: 20px;
+}
+.myreferences{
+  display: flex;
+  flex-wrap: wrap;
+}
+.references-left, .references-right{
+  flex: 25%;
+}
+.myreferences p{
+  color: #5c5b5b;
+  font-size: 0.8em;
+  margin: 0;
+}
+/* Media screen starts */
+@media screen and (max-width: 812px) {
+  .container-cv{
+    font-size: 120%;
+  }
+  .arrowicon{
+    visibility: hidden;
+  }
+  .column-left, .column-right-cv{
+    margin-bottom: 0;
+  }
+  .column-emp-left{
+    height: 0px;
+  }
+ .column-emp-middle, .column-emp-right, .myreferences{
+  flex: 100%;
+  border: 0px solid green;
+}
+.column-emp-right{
+  margin-bottom: 10px;
+}
+.column-emp-middle p{
+  margin-bottom: 0;
+}
+.skill-container{
+  flex-direction: column;
+}
+.licenses ul{
+  margin: 0;
+}
+.licenses{
+  padding-bottom: 10px;
+}
+.myreferences{
+  margin: 0;
+}
+.myreferences ul{
+  margin-top: 0;
+}
+.container-cv{
+padding: 10px;
+display: block;
+}
+}
+@media screen and (max-width: 1630px) {
+  .container-cv{
+    margin-left: 250px;
+    margin-right: 250px;
+    row-gap: 0px;
+    margin-bottom: 50px;
+  } 
+}
+@media screen and (max-width: 1350px) {
+  .container-cv{
+    margin-left: 150px;
+    margin-right: 150px;
+    row-gap: 0px;
+    margin-bottom: 50px;
+  } 
+}
+@media screen and (max-width: 1110px) {
+  .container-cv{
+    margin-left: 80px;
+    margin-right: 80px;
+    row-gap: 0px;
+    margin-bottom: 50px;
+  } 
+}
+@media screen and (max-width: 970px) {
+  .container-cv{
+    margin-left: 50px;
+    margin-right: 50px;
+    row-gap: 0px;
+  } 
+}
+@media screen and (max-width: 910px) {
+  .container-cv{
+    margin-left: 15px;
+    margin-right: 15px;
+    row-gap: 0px;
+    margin-bottom: 50px;
+  } 
+  @media screen and (max-width: 843px) {
+    .container-cv{
+      margin-left: 3px;
+      margin-right: 3px;
+      row-gap: 0px;
+      margin-bottom: 50px;
+    } 
+}
+}
+/* ***************************************************************** */
+/* PORTFOLIO PAGE STARTS */
+.mainPortfolio{
+  background-color: rgb(0, 0, 0, 0.7);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.portfolioHeader{
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 100%;
+}
+.portfolioHeader h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 3px;
+}
+.portfolioHeader h4{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.styleLinks p{
+  margin: 0;
+}
+.styleLinks:link{
+  text-decoration: none;
+  color: rgb(247, 117, 12);
+}
+.styleLinks:visited{
+  text-decoration: none;
+  color: rgb(247, 117, 12);
+}
+.styleLinks:hover{
+  color: rgb(255, 255, 255);
+}
+.projectColumn{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  border: 0px solid rgb(187, 4, 4);
+}
+.projectRow{
+  margin-bottom: 4em;
+}
+#bankImg, #databaseImg{
+  width: 80%;
+}
+/* Modala popup without javascript starts */
+.box {
+  width: 40%;
+  margin: auto;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  border: 0px solid rgb(255, 255, 255);
+  background-clip: padding-box;
+  text-align: center;
+}
+.button {
+  font-size: 12px;
+  padding: 05px;
+  color: rgb(0, 0, 0);
+  border: 0px solid rgb(177, 180, 7);
+  background-color: rgb(247, 117, 12);
+  border-radius: 10px 10px;
+  text-decoration:none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: rgb(255, 255, 255);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility:visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor:default;
+}
+.popup .close:hover {
+  color: #ff0000;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.content h3{
+  color: rgb(247, 117, 12);
+}
+@media screen and (max-width: 768px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+/* Modala popup without javascript ends */
+/* Portfolio page ends */
+/* ***************************************************************** */
+/* Photo page starts */
+.photoContent{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.pictureContainer {
+  text-align: center;
+  padding: 5px;
+}
+.photoHeader{
+  text-align: center;
+  margin-top: 75px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.photoHeader h1{
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.photoHeader h5{
+text-align: center;
+color: rgb(255, 255, 255);
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+padding-top: 0;
+}
+.picture{
+  margin: 10px;
+  width: 15%;
+  padding: 3px;
+  box-shadow: 0px 0px 50px 0px #4d53a1;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.pictureContainer{
+   margin: 0;
+   margin-bottom: 50px;
+  }
+  .picture{
+    width: 80%;
+  }
+}
+/* Photo page ends */
+/* ***************************************************************** */
+/* Contact page starts */
+.contactMain{
+  border: #bc2f2f solid 0px;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
+}
+.contactMe{
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  border: #ffffff solid 7px;
+  box-shadow: rgb(14, 122, 238) 0px 0px 900px 20px;
+}
+.contactMe p.beside{
+  display:inline-block;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.styleEmail:link{
+  text-decoration: none;
+  color: #000000;
+}
+.styleEmail:visited{
+  text-decoration: none;
+  color: #000000;
+}
+.styleEmail:hover{
+  color: rgb(187, 116, 10);
+}
+.contactMe img{
+  width: 1em;
+}
+.socialMedia a{
+  text-align: center;
+  margin-left: 5px;
+}
+.socialMedia img:hover{
+  width: 7%;
+}
+/* Contact page ends */
+
+/* ********************************************************** */
+/* ********************************************************** */
+/* modal for enlarge picture onclick */
+/* Portfolio and Photo pages use it */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #800707;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* ********************************************************** */
+/* ********************************************************** */
+/* Web guidelines starts */
+.headerWebguidelines {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.webguidelines{
+  color: #ffffff;
+  border:  0px solid green;
+  margin-bottom: 70px;
+}
+.webguidelines ul{
+  background-color: rgb(51, 51, 51);
+  border:  0px solid red;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.webguidelines li{
+  margin-bottom: 5px;
+  color: white;
+}
+.webguidelines p{
+  margin: 0;
+}
+.uppfyllda{
+  color: rgb(247, 117, 12);
+}
+.ejuppfyllda{
+color: #ce6e6e;
+}
+.webguidelines h2{
+padding-top: 10px;
+margin-bottom: 0;
+}
+.webguidelines hr{
+  margin-left: 0px;
+  margin-right: 40px;
+}
+/* Web guidelines ends */

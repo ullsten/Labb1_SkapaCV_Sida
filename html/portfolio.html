@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Labb1_SkapaCV_Sida/css/style.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="/Labb1_SkapaCV_Sida/css/print.css" media="print">
+    <title>Portfolio</title>
+            <!-- script for responsive navbar -->
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+              </script>
+</head>
+<body id="portfolio">
+    <!--navbar starts-->
+    <script id="add_navbar" src="/Labb1_SkapaCV_Sida/js/navbar.js"></script>
+    <!--navbar ends-->
+        <!-- header starts -->
+        <header class="portfolioHeader">
+          <h1>Here are some projects that I have done</h1>
+          <h4>click on image for larger size</h4>
+          <p class="printContent">(save as PDF to get hyperlinks clickable)</p>
+        </header>
+    <!-- Main content starts -->
+    <main class="mainPortfolio">
+      <section class="projectRow">
+        <section class="projectColumn">
+          <a class="styleLinks" href="https://github.com/ullsten/Lab4_Induvidual_Database_Project.git" target="_blank"><p>Individual database project</p></a>
+          <img class="picture" id="databaseImg" src="/Labb1_SkapaCV_Sida/img/Individual_database_picture.png" alt="Individual_database_picture">
+        </section>
+        <section class="projectColumn">
+          <a class="styleLinks" href="https://github.com/ullsten/TeamOv.git" target="_blank"><p>Banking application</p></a>
+          <img class="picture" id="bankImg" src="/Labb1_SkapaCV_Sida/img/TeamEmosPicture.png" alt="Bank login picture">
+          <section class="box">
+            <a class="button" href="#popup1" aria-label="more info about projects">more info</a>
+          </section>
+          <!-- Content in modala popup -->
+        <section id="popup1" class="overlay">
+            <section class="popup">
+                <a class="close" href="#">&times;</a>
+                <section class="content">
+                  <h3>Individual database project create school</h3>
+                  In this project, you will build a complete and fully functional
+                  application for the fictitious school you worked with in the last labs.
+                  <h3>Bank application</h3>
+                  The project was about creating an application after a backlog about a bank.
+                  This is our interpretation of what a banking application might look like.
+                </section>
+            </section>
+        </section>   
+         <!-- Content in modala popup ends-->
+      </section>
+</main>
+<!-- Main content ends -->
+
+<!-- The Modal to create clickable image-->
+<section id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <section id="caption"></section>
+</section>
+<!-- javascript for enlarge pictures starts -->
+<script src="/Labb1_SkapaCV_Sida/js/onclickEnlarge.js"></script>
+    <!--footer starts-->
+    <footer class="footer">
+      <address>Copyright &copy Oskar Ullsten 2023</address>
+    </footer>
+      <!-- footer ends -->
+</body>
+</html>
